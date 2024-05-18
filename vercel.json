@@ -17,6 +17,9 @@
     "rewrites": [
         { "source": "/public/:path*", "destination": "/public/:path*" }
     ],
+    "redirects": [
+        { "source": "/", "destination": "/public/index.html", "permanent": true }
+    ],
     "env": {
         "APP_NAME": "Vercel Laravel",
         "APP_ENV": "production",
